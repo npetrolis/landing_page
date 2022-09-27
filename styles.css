@@ -2,6 +2,8 @@ body {
     font-family: Roboto, sans-serif;
     font-size: 18px;
     color: #E5E7EB;
+    display: flex;
+    flex-direction: column;
 }
 
 .header,
@@ -14,6 +16,8 @@ ul {
     list-style: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    gap: 16px;
 }
 
 a {
@@ -24,12 +28,18 @@ a {
 .logo {
     font-size: 24px;
     color: #F9FAF8;
+    font-weight: bold;
 }
 
 .hero-text {
     font-size: 48px;
     font-weight: bolder;
     color: #F9FAF8;
+}
+
+.hero-text-small {
+    font-size: 18px;
+    color: #E5E7EB;
 }
 
 .sign-up {
@@ -49,6 +59,7 @@ a {
     font-size: 36px;
     font-weight: bolder;
     color: #1F2937;
+    margin-bottom: 32px;
 }
 
 .cards-text {
@@ -59,6 +70,8 @@ a {
     background-color: #E5E7EB;
     color: #1F2937;
     padding: 32px;
+    display: flex;
+    padding: 32px 300px;
 }
 
 blockquote {
@@ -67,12 +80,17 @@ blockquote {
     font-weight: lighter;
     color: #1F2937;
 }
-
+figcaption {
+    text-align: right;
+}
 .call-to-action {
     border-radius: 10px;
     background-color: #3882f6;
-    padding: 32px;
-    margin: 48px 300px;
+    padding: 48px 16px;
+    margin: 32px 300px;
+    display: flex;
+    justify-content: space-around;
+
 }
 
 .call-text-main {
@@ -85,4 +103,69 @@ blockquote {
 
 .footer {
     padding: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 24px;
+}
+
+.left,
+.right {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+
+.hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 24px;
+    align-items: center;
+}
+
+.hero-text {
+    max-width: 600px;
+}
+
+.hero-img {
+    width: 600px;
+    height: 200px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    max-width: 200px;
+    margin-bottom: 52px;
+}
+
+.img-test {
+    width: 150px;
+    height: 150px;
+    border: 3px solid #3882f6;
+    border-radius: 10px;
+    margin-bottom: 8px;
+}
+
+.cards-text {
+    text-align: center;
 }
